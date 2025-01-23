@@ -1,5 +1,6 @@
 {
   "compilerOptions": {
+    "allowImportingTsExtensions": true,
     "allowJs": true,
     "allowUnreachableCode": false,
     "baseUrl": "./src",
@@ -13,18 +14,22 @@
     "isolatedModules": true,
     "lib": ["es2020"],
     "module": "nodenext",
+    "noEmit": true,
     "noFallthroughCasesInSwitch": true,
     "noUnusedLocals": true,
     "outDir": "./dist",
     "skipLibCheck": true,
     "sourceMap": true,
     "strict": true,
-    "target": "es2022"
+    "target": "es2022",
+    "types": ["vitest"]
   },
   "exclude": [
     "node_modules",
   ],
   "include": [
+    "tests/**/*.ts",
     "src/**/*.ts",
+    "vitest.config.ts",
   ]
 }
