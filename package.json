@@ -2,9 +2,16 @@
   "name": "graphql-sequelize-typescript",
   "version": "1.0.0",
   "description": "GraphQL & Relay for MySQL & Postgres via Sequelize",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "scripts": {
+    "build": "tsc",
+    "prepublishOnly": "npm run build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Jonathan Hoyt <jonmagic@gmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "typescript": "^5.7.3"
+  }
 }
