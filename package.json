@@ -4,6 +4,7 @@
   "description": "GraphQL & Relay for MySQL & Postgres via Sequelize",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
+  "type": "module",
   "scripts": {
     "build": "tsc",
     "prepublishOnly": "npm run build",
