@@ -1,0 +1,10 @@
+{
+  "name": "graphql-sequelize-typescript",
+  "version": "1.0.0",
+  "description": "GraphQL & Relay for MySQL & Postgres via Sequelize",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Jonathan Hoyt <jonmagic@gmail.com>",
+  "license": "MIT"
+}
