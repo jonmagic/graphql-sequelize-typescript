@@ -2,6 +2,7 @@ import typescriptEslintPlugin from '@typescript-eslint/eslint-plugin'
 import typescriptEslintParser from '@typescript-eslint/parser'
 import eslintConfigPrettier from 'eslint-config-prettier'
 import prettierPlugin from 'eslint-plugin-prettier'
+import vitest from "@vitest/eslint-plugin"
 
 export default [
   {
@@ -20,11 +21,14 @@ export default [
     plugins: {
       '@typescript-eslint': typescriptEslintPlugin,
       prettier: prettierPlugin,
+      vitest,
     },
     rules: {
       ...typescriptEslintPlugin.configs.recommended.rules,
       ...prettierPlugin.configs.recommended.rules,
       'prettier/prettier': ['error', { usePrettierrc: true }],
+      ...vitest.configs.recommended.rules,
+
     },
     settings: {
       prettier: {
