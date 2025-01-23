@@ -24,5 +24,10 @@
     "eslint-plugin-prettier": "^5.2.3",
     "typescript": "^5.7.3",
     "vitest": "^3.0.4"
+  },
+  "dependencies": {
+    "graphql": "^16.10.0",
+    "graphql-relay": "^0.10.2",
+    "sequelize": "^6.37.5"
   }
 }
